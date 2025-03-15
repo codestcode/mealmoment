@@ -1,0 +1,488 @@
+*{
+    box-sizing: border-box;
+  }
+  body{
+    margin: 0;
+    font-family: Inter, sans-serif;
+    
+    background: #FFEFBA;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+  
+  }
+  header{
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    height: 80px;
+    /* background-color: white; */
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.06);
+    
+
+  }
+  .chef-logo{
+    width: 43px;
+    height: 52px;
+    margin-left: 6px;
+
+  }
+ p{
+    width: 172;
+height: 60;
+
+ }
+ h1{
+  font-family: "Playfair Display", serif;
+font-weight: 400;
+font-size: 32px;
+line-height: 60px;
+letter-spacing: -5%;
+
+ }
+ form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+ padding: 65px;
+ transform: translate(-387px, 264px);
+
+ }
+ .form-input{
+  width: 407px;
+  height: 51px;
+  padding: 7px 19px;
+  border-radius: 26px;
+  color: #141414;
+  box-shadow: 0px 1px 10px 0px #00000042;
+  border: .1px solid #D1D5DB;
+  border: px solid #D1D5DB;
+  max-width: 402px;
+  margin: 8px;
+ }
+/* .ing-button{
+     background: #141413;
+    color: white;
+padding: 9px 17px;
+border-radius: 6px;
+box-shadow: 0px 1px 16px 1px #00000096;
+font-family: Inter, sans-serif;
+font-weight: 200;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: 0%;
+
+}  */
+.ingredients-section>h2{
+    font-family: Inter;
+    transform: translateY(-56px);
+    padding-left: 13px;
+    font-family: "Caveat",cursive;
+    font-size: 40px;
+margin-top: 2px;
+
+
+}
+.ingredients-list{
+
+  transform: translate(15px, -63px);
+
+  }
+  ul.ingredients-list {
+    list-style-position: inside;
+    width: 600px;
+    max-width: 100%;
+    /* background: white; */
+    padding: 0;
+    margin-bottom: 5px;
+    border-radius: 0.1rem;
+    font-family: "Caveat",cursive;
+    font-optical-sizing: auto;
+    font-style:bold;
+    font-size: 30px;
+    flex-wrap: wrap;
+}
+  /* ul.ingredients-list > li {
+    color: #475467;
+    line-height: 28px;
+    font-family: inter;
+} */
+ul.ingredients-list > li {
+	padding: 0 0 0 1rem;
+  margin-bottom: 10px;
+
+}
+
+
+
+
+li:last-child {
+	margin-bottom: 1rem;
+}
+
+::marker {
+	content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' width='14' viewBox='0 0 50 50'%3E%3Cpath d='M46.4 16.2c-2.3-2.3-5.4-3.5-8.4-4.5-.5-.2-1.1-.3-1.6-.5-1.6-1.6-3.7-2.8-6.2-3.2-1-.2-1.9.1-2.5.6-.9-.3-1.8-.6-2.7-.8-3.2-1-6.4-1.8-9.5-.1-1 .5-1.9 1.2-2.7 2-6.4 1.4-11.7 5-12.4 12.7C0 27 1.9 31.5 4.9 34.9c.1.6.2 1.1.4 1.7 1 3.2 3.3 5.7 6.7 6.5 2.7.6 5.4-.2 7.9-1.2 3.3.4 6.7.3 9.9 0 6.5-.7 13.3-2.8 17.1-8.5 3.6-5.2 4-12.6-.5-17.2zm-17.3.9c2.1.4 4 1.7 4.7 3.8 0 .5-.1 1.1-.2 1.6-.3 1.4-.8 2.6-1.6 3.7-.7.2-1.5.1-2.3-.4-.8-.4-1.6-1-2.2-1.6-.4-.4-1.2-1.7-1.6-1.9 3.4 1.3 5.1-3 3.2-5.2zm-11.6 9.7c.2-1.9 1.1-3.9 2.3-5.5-.4 2.1.3 4.2 1.7 6 1.3 1.7 3.1 3.2 5 4.2-.2.1-.4.2-.6.4-.1 0-.1.1-.2.1-3.9.2-8.7-.8-8.2-5.2zm-6.4 3.1c.1.3.1.7.2 1 .2.6.4 1.2.7 1.8-.4-.2-.7-.5-1-.7.1-.8.1-1.4.1-2.1zm31.2-1.3c-.9 1.7-2.1 3.1-3.7 4.1 2-2.1 3.4-4.7 4-7.6.2-.7.3-1.4.3-2.1.6 1.5.5 3.3-.6 5.6z'/%3E%3C/svg%3E") ' ';
+}
+
+li:nth-child(3n)::marker {
+	content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' width='14' viewBox='0 0 50 50'%3E%3Cpath d='M46.5 12.5c-.4-1.1-1.3-1.8-2.2-2-4.2-4-11.6-4.3-17.1-4.1-6.9.3-13.9 2.1-19.4 6.5C2 17.5-2.4 25.7 2.5 32.6c2.2 3.2 5.5 4.9 9 5.5 3.3 1.7 6.7 3.3 10.2 4.4 7.8 2.3 17 1.6 23.2-4.3 7.3-7 4.8-17.3 1.6-25.7zm-20.2 2.7c.6 0 1.3 0 1.8.2 1.1.4 1.7 1.3 2 2.3-1-1.2-2.4-2.1-3.8-2.5zm-1.4 6.6c.9.9 1.3 2.2-.2 2.3-2 .2-1.1-1.9.2-2.3zm-11.8 9.8c-.6-.3-2.9-1.1-3.2-1.8-.2-.5 1.4-3.1 2.1-4.2.3.5.7 1 1.2 1.4 0 .3.1.6.2.8.5 1.9 1.5 3.1 2.9 4h-.2c-.8.1-1.6.1-2.5-.1-.2 0-.3 0-.5-.1zM24 36.4c1.6-.7 3-1.5 4.3-2.5.8.2 1.7.3 2.5.5 2.5.4 5.2.9 7.7.6-.9.6-2 1.1-3 1.4-3.9 1.3-7.7 1-11.5 0z'/%3E%3C/svg%3E") ' ';
+}
+
+li:nth-child(3n - 1)::marker {
+	content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' width='14' viewBox='0 0 50 50'%3E%3Cpath d='M48.3 23.7c-1-9.9-9.9-15.6-18.8-17.8-8.2-2.1-18.8-2.6-24.6 4.8C.6 16.2 1 23.6 4.3 29.3c-.5 1-.8 2-1 3-.6 4 2 7.6 5.1 10 5.9 4.4 14 4.2 19.6-.4 1.5 0 2.9-.2 4.4-.5 1.8 0 3.5 0 5.3-.1 2.3-.1 3.5-1.9 3.5-3.7 4.5-3.3 7.7-8.2 7.1-13.9zM9.1 17.8c1.1-4.1 4.9-5.8 8.8-6.1.9-.1 1.9-.1 2.9-.1-3.2 1.6-6.3 4.6-8 7.4-.1.1-.1.2-.2.3-1.1.9-2.1 1.9-3 2.9-.2.2-.4.4-.5.6-.4-1.7-.5-3.3 0-5z'/%3E%3C/svg%3E") ' ';
+}
+.message h3 {
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 24px;
+}
+.message p {
+  color: #6B7280;
+  font-size: 0.875rem;
+  line-height: 20px;
+  margin-top: -10px;
+}
+.message{
+  display: flex;
+  border-radius: 8px;
+  /* background: #F0EFEB; */
+  padding: 10px 28px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+  justify-content: center;
+  align-items: center;
+  padding: 23px;
+  margin: -42px;
+  width: 100%;
+  height: 100%;
+  transform: translate(8px, 50px);
+
+}
+/* .message button {
+  border: none;
+  border-radius: 6px;
+  background: #D17557;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+  color: #FAFAF8;
+  padding: 9px 17px;
+  font-family: Inter, sans-serif;
+  font-size: 0.875rem;
+  height: 45px;
+    transform: translate(56px, 27px);
+  cursor: pointer;
+} */
+.ai-generated{
+  padding-left: 10px;
+  font-family: 'Caveat';
+  font-size: 24px;
+  font-weight: 400;
+  transform: translate(4px, 384px);
+  background-image: url("D:/habeba/habeba/new work of DOM/chef-clu/src/img/bread.jpg");
+  background-size: cover;
+min-width: 50px;
+}
+.ai-generated::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255 255 255 / 34%); /* Adjust the last value (0.5) for opacity */
+  z-index: -1;
+}
+.form-container {
+  background-image: url("D:/habeba/habeba/new work of DOM/chef-clu/src/img/screach pic.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 50vh; /* Adjusted minimum height */
+  height: 100vh;
+}
+.messsage-button {
+  border: none;
+  width: 11em;
+  height: 4em;
+  border-radius: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  background: #1C1A1C;
+  cursor: pointer;
+  transition: all 450ms ease-in-out;
+  transform: translate(121px, 0);
+
+}
+
+.sparkle {
+  fill: #AAAAAA;
+  transition: all 800ms ease;
+}
+
+.text {
+  font-weight: 600;
+  color: #AAAAAA;
+  font-size: medium;
+}
+
+.messsage-button:hover {
+  background: linear-gradient(0deg,#A47CF3,#683FEA);
+  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
+  inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
+  0px 0px 0px 4px rgba(255, 255, 255, 0.2),
+  0px 0px 180px 0px #9917FF;
+  /* transform: translateY(-2px); */
+}
+
+.messsage-button:hover .text {
+  color: white;
+}
+
+.messsage-button:hover .sparkle {
+  fill: white;
+  transform: scale(1.2);
+} 
+
+/*^ the +add ingrediants button*/
+
+/* From Uiverse.io by KlaujonRuamni */ 
+.ing-button {
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(to bottom, #1b1c3f, #4a4e91);
+  color: white;
+  /* font-family: "Segoe UI", sans-serif; */
+  /* font-weight: bold; */
+  font-size: 15px;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 10px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  animation: button-shimmer 2s infinite;
+  transition: all 0.3s ease-in-out;
+  font-family: 'Inter';
+}
+
+/* Hover animation */
+.ing-button:hover {
+  background: linear-gradient(to bottom, #2c2f63, #5b67b7);
+  animation: button-particles 1s ease-in-out infinite;
+  transform: translateY(-2px);
+}
+
+/* Click animation */
+.ing-button:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Shimmer animation */
+@keyframes button-shimmer {
+  0% {
+    background-position: left top;
+  }
+
+  100% {
+    background-position: right bottom;
+  }
+}
+
+/* Particle animation */
+@keyframes button-particles {
+  0% {
+    background-position: left top;
+  }
+
+  100% {
+    background-position: right bottom;
+  }
+}
+.ingredients-section{
+  margin: 4px;
+  padding-top: 147px;
+  margin: 23px;
+
+}
+
+
+.head-text {
+  margin: 0; padding: 0;
+  position:absolute;
+  top: 50%; left: 50%;
+  transform: translate(-97%, -89%);
+  font-size: 6em; color:transparent;
+  text-transform:uppercase;
+  font-family: "Playfair Display", serif;
+
+}
+.head-text span:nth-child(1){
+  position:absolute;
+  top:0; left:0; color: #000;
+  transition:0.5s;
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+  overflow:hidden;
+}
+.head-text:hover span:nth-child(1){
+  transform:translateY(-18px); 
+}
+.head-text span:nth-child(2){
+  position:absolute;
+  top:0; left:0; color: #000;
+  transition:0.5s;
+  clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
+  overflow:hidden;
+}
+.head-text:hover span:nth-child(2){
+  transform:translateY(18px); 
+}
+.head-text span:nth-child(3){
+  position:absolute;
+  top:50%; left: 0;
+  transform:translateY(-50%) scaleY(0);
+  width: 91%; color: #000;
+  background:rgba(255, 145, 0, 0);
+  font-size: 0.25em; font-weight: 500;
+  letter-spacing:0.7em;
+  text-align:center;
+  padding-left: 20px; margin-left: 5px;
+  transition:0.5s;
+  font-family: "Playfair Display", serif;
+
+}
+.head-text:hover span:nth-child(3){
+  transform:translateY(-50%) scaleY(1);
+}
+.word-text{
+  font-family: "Playfair Display", serif;
+    transform: translate(20px, 298px);
+    font-size: 38px;
+    margin: 0;
+    padding: 0;
+
+}
+
+:root {
+  --card-height: 300px;
+  --card-width: calc(var(--card-height) / 1.5);
+}
+
+/* Container for the entire layout */
+.page-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background: #191c29;
+  padding: 20px;
+  gap: 20px;
+}
+
+/* Placeholder for your list */
+.list-container {
+  width: 30%;
+  min-width: 200px;
+  /* Add your list styling here */
+  background: #2a2d3e;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+/* Container for cards */
+.cards-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1;
+  gap: 25px;
+}
+
+.card {
+  width: var(--card-width);
+  height: var(--card-height);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  perspective: 2500px;
+}
+
+.wrapper {
+  transition: all 0.5s ease-in-out;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: 133px;
+  left: 971px;
+}
+
+.cover-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+}
+
+.character {
+  width: 80%;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%) scale(0.1);
+  z-index: 1;
+  top: 86px;
+  left: 1050px;
+}
+
+/* Hover effects */
+.card:hover .wrapper {
+  transform: perspective(900px) translateY(-5%) rotateX(15deg);
+  box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+}
+
+.card:hover .character {
+  opacity: 1;
+  bottom: 20px;
+  transform: translateX(-50%) scale(1) translateZ(50px);
+}
+
+/* Gradient overlay effect */
+.wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  background-image: linear-gradient(
+    to top,
+    transparent 46%,
+    rgba(12, 13, 19, 0.5) 68%,
+    rgba(12, 13, 19) 97%
+  );
+  border-radius: 8px;
+}
+
+.card:hover .wrapper::before {
+  opacity: 0.8;
+}
+.card-one{
+  position: absolute;
+  top: 640px;
+  left: 124px;}
+  .card-two{
+    position: absolute;
+    top: 905px;
+    left: 42px;}
+    .card-three{
+      position: absolute;
+      top: 1178px;
+      left: -52px;
+    }
