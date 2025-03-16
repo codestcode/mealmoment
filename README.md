@@ -15,8 +15,7 @@
 4. Cook and enjoy! 🍴
 
 ## Demo 🚀
-*(Add a live demo link if available!)*  
-[Live Demo](#) *(Coming soon!)*
+https://codestcode.github.io/mealmoment/
 
 
 ## Tech Stack 🛠️
