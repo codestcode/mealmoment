@@ -27,7 +27,7 @@ export async function getRecipeFromGemini(ingredients) {
       history: [],
     });
 
-    const prompt = `You are an assistant that receives a list of ingredients that a user has and suggests a recipe they could make with some or all of those ingredients. You don't need to use every ingredient they mention in your recipe. The recipe can include additional ingredients they didn't mention, but try not to include too many extra ingredients. Format your response in markdown to make it easier to render to a web page.
+    const prompt = `You are an assistant that receives a list of ingredients that a user has and suggests a recipe they could make with some or all of those ingredients. You don't need to use every ingredient they mention in your recipe. The recipe can include additional ingredients they didn't mention, but try not to include too many extra ingredients and add the calories and the best diet plans to use this recipe in and how many protien in it . Format your response in markdown to make it easier to render to a web page.
     Using these ingredients: ${ingredients.join(", ")}`;
 
     const result = await chatSession.sendMessage(prompt);
